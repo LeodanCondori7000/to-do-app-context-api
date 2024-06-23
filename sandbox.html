@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>How to use the mousedown event in javascript</title>
+    <style>
+      #demoDIV {
+        border: 1px solid black;
+      }
+      #datas {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>How to use the mousedown event in javascript</h2>
+    <p id="datas"></p>
+    <div id="demoDIV" onmousedown="demoDIVFunction()">
+      The javascript mousedown event is the mouse event to navigate the html web
+      page. When we press the mouse button, "onmouseevent and its handler
+      operate on the page".
+    </div>
+    <script>
+      function demoDIVFunction() {
+        document.getElementById("datas").innerHTML =
+          "JavaScript Mouse down Method activates successfully!!!";
+        document.getElementById("demoDIV").style.fontSize = "25px";
+        document.getElementById("demoDIV").style.color = "blue";
+        document.getElementById("demoDIV").style.border = "1px solid black";
+      }
+    </script>
+  </body>
+</html>
